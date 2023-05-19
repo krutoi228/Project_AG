@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper .carousel{
+    font-size: 0px;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0 10px;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.fon_slider {
+    background: url("../images/fon3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-left: 14%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.wrapper i{
+    position: absolute;
+    top: 40%;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    background: #FF6B00;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.carousel img{
+    height: 350px;
+    object-fit: cover;
+    margin-left: 80px;
+    width: 270px;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
+}

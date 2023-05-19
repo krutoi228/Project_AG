@@ -1,0 +1,24 @@
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe\ UI,Roboto,Helvetica\ Neue,Arial,Noto\ Sans,sans-serif;
+    font-size: 2rem;
+    color: white;
+    transition: all .7s ease-in-out;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import "Block/nav_eff.scss";
+@import "Block/layer.scss";
+@import "Block/parallax.scss";
+@import "Block/section_eff.scss";

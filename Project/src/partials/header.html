@@ -1,0 +1,52 @@
+<header class="header_main">
+    {{> nav }}
+    <div class="head">
+        <div class="header">
+            <h2 class="introductory" data-aos="fade-up">
+                Вводящий заголовок о сайте
+            </h2>
+        </div>
+
+        <div class="paragraph">
+            <p class="introductory_prh" data-aos="fade-right" data-aos-delay="50">
+                Тут расположена вводящия информация<br>
+                О сайте и его пременения в определенных сферах<br>
+                А так же о его функциях
+            </p>
+        </div>
+
+        <div>
+            <button class="butten_reg" easy-toggle="#main_menu" easy-class="show" data-aos="fade-up" data-aos-delay="100">Регистрация</button>
+
+            <div id="main_menu" class="modl">
+                <div class="modl_window">
+                    <h2 class="reg">Регистрация</h2>
+                    <button class="btn_close" easy-toggle="#main_menu" easy-class="open">X</button>
+                    <form action="/">
+                        <div class="input">
+                            <input class="form" type="email" placeholder=" ">
+                            <label class="lable">Email</label>
+                        </div>
+
+                        <div class="input">
+                            <input class="form" type="password" placeholder=" ">
+                            <label class="lable">Пароль</label>
+                        </div>
+
+                        <div class="input">
+                            <input class="form" type="password" placeholder=" ">
+                            <label class="lable">Повтарите пароль</label>
+                        </div>
+
+                        <button class="button_form" easy-toggle="#main_menu" easy-class="show">Войти</button>
+                    </form>
+                </div>
+                <div class="overlay" easy-toggle="#main_menu" easy-class="open">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>

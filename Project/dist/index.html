@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" id="theem">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/Exclude.svg">
+    
+    <title>Проект AG</title>
+</head>
+<body>
+
+    <div class="page">
+        <div>
+            <header class="header_main">
+                <div class="div" id="div">
+                    <a href="#" data-aos="fade-right" class="logo">МК</a>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li><a href="index.html" class="slid">Главная</a></li>
+                            <li><a href="zeffects.html" class="slid">Эфекты</a></li>
+                            <li><a href="#" class="slid">Нестардартное</a></li>
+                        </ul>
+                        <label style="margin-right: 25px;">
+                            <input type="checkbox" id="switchMode">
+                            <span class="chek"></span>
+                        </label>
+                    </nav>
+                </div>     <div class="head">
+                    <div class="header">
+                        <h2 class="introductory" data-aos="fade-up">
+                            Вводящий заголовок о сайте
+                        </h2>
+                    </div>
+            
+                    <div class="paragraph">
+                        <p class="introductory_prh" data-aos="fade-right" data-aos-delay="50">
+                            Тут расположена вводящия информация<br>
+                            О сайте и его пременения в определенных сферах<br>
+                            А так же о его функциях
+                        </p>
+                    </div>
+            
+                    <div>
+                        <button class="butten_reg" easy-toggle="#main_menu" easy-class="show" data-aos="fade-up" data-aos-delay="100">Регистрация</button>
+            
+                        <div id="main_menu" class="modl">
+                            <div class="modl_window">
+                                <h2 class="reg">Регистрация</h2>
+                                <button class="btn_close" easy-toggle="#main_menu" easy-class="open">X</button>
+                                <form action="/">
+                                    <div class="input">
+                                        <input class="form" type="email" placeholder=" ">
+                                        <label class="lable">Email</label>
+                                    </div>
+            
+                                    <div class="input">
+                                        <input class="form" type="password" placeholder=" ">
+                                        <label class="lable">Пароль</label>
+                                    </div>
+            
+                                    <div class="input">
+                                        <input class="form" type="password" placeholder=" ">
+                                        <label class="lable">Повтарите пароль</label>
+                                    </div>
+            
+                                    <button class="button_form" easy-toggle="#main_menu" easy-class="show">Войти</button>
+                                </form>
+                            </div>
+                            <div class="overlay" easy-toggle="#main_menu" easy-class="open">
+            
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            
+            </header>
+        </div>
+
+        <div>
+            <section class="section">
+                <div class="scroll">
+                    <h3 class="head_sec" data-aos="fade-right" data-aos-offset="150">Слайдер</h3>
+                    <p data-aos="fade-up" data-aos-offset="150">Сделанный на чистом <span class="span_js">JS</span> без потключения библиотек</p>
+                </div>
+            
+                <div class="fon_slider">
+                    <div class="wrapper">
+                        <i id="left" class="fa-solid fa-angle-left" data-aos="fade-right" style="z-index: 100;"></i>
+                        <div class="carousel">
+                            <img src="assets/images/css_images.png" alt="" draggable="false" data-aos="fade-up" data-aos-offset="200">
+                            <img src="assets/images/html_images.png" alt="" draggable="false" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200">
+                            <img src="assets/images/js_images.png" alt="" draggable="false" data-aos="fade-up" data-aos-delay="350" data-aos-offset="200">
+                            <img src="assets/images/scss_images.png" alt="" draggable="false" data-aos="fade-up" data-aos-delay="550" data-aos-offset="200">
+                            <img src="assets/images/gulp_images.png" alt="" draggable="false" data-aos="fade-up" data-aos-delay="650" data-aos-offset="200">
+                        </div>
+                        <i id="right" class="fa-solid fa-angle-right" data-aos="fade-left"></i>
+                    </div>
+                </div>
+            </section>        </div>
+
+        <div>
+            <section class="section_map">
+                <div class="container">
+                    <div class="section-map__title">
+                        <h2 class="title-2">Район на карте</h2>
+                    </div>
+                    <div class="section-map__map">
+                        <div class="map" id="map"></div>
+                        <div class="map_infa">Яндекс карта, которая отабразилась<br>
+                            Благодаря подглючению API карты<br>
+                            И стелизации на JS<br>
+                            Я добавил на карту свой элемент(Метку)<br>
+                            И bolloon на её, то есть отаброжения информации<br>
+                            При нажатии на элемент</div>
+                    </div>
+            
+                </div>
+            </section>        </div>
+
+        <div>
+            <footer class="footet">
+                <div class="sub_footer">
+                    <p class="inst">Хочешь вернуться, жми <a href="#div" style="color: orangered;">сюда</a></p>
+                </div>
+            
+            </footer>
+        </div>
+
+        <main class="main">
+            
+        </main>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=15d1ad84-fd13-4a33-95dd-5c45738bea70&lang=ru_RU" text="text/javascript"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/event.js"></script>
+    <script src="assets/js/slaider.js" defer></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/mod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
+</body>
+</html>

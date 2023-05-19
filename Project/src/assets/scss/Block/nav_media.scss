@@ -1,0 +1,79 @@
+@media screen and (max-width:700px) {
+    .logo{
+        width: 46px;
+        height: 46px;
+        font-size: 2.1rem;
+    }
+    .slid{
+        font-size: 1.5rem;
+    }
+    .introductory{
+        font-size: 3.4rem;
+    }
+    .introductory_prh{
+        font-size: 1.8rem;
+    }
+    .butten_reg{
+        font-size: 1.4rem;
+    }
+    .head{
+        margin-top: 90px;
+    }
+    .modl_window {
+        width: 470px;
+    }
+    .reg{
+        font-size: 2.4rem;
+    }
+    .button_form{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .logo{
+        width: 39px;
+        height: 38px;
+        font-size: 1.7rem;
+    }
+    .slid{
+        font-size: 1.4rem;
+    }
+    .introductory{
+        font-size: 3rem;
+    }
+    .introductory_prh{
+        font-size: 1.5rem;
+    }
+    .butten_reg{
+        font-size: 1.1rem;
+    }
+    .chek{
+        width: 37px;
+        height: 18px;
+        margin-top: 12px;
+    }
+    .chek::before{
+        width: 14px;
+        height: 14px;
+    }
+    .menu{
+        margin-top: 2px;
+    }
+    .modl_window {
+        width: 410px;
+    }
+    .reg{
+        font-size: 2rem;
+    }
+    .button_form{
+        font-size: 1.2rem;
+    }
+    .input{
+        margin-bottom: 18px;
+        padding: 7px 7px;
+    }
+    .btn_close{
+        font-size: 1.7rem;
+    }
+}

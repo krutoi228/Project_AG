@@ -1,0 +1,56 @@
+.logo {
+    color: white;
+    width: 56px;
+    height: 56px;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+
+.div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    border-bottom: white 2px solid;
+    padding-top: 12px;
+    width: 517px;
+    z-index: 1;
+}
+
+
+.menu { 
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.slid {
+    position: relative;
+    color: white;
+    font-size: 1.9rem;
+    margin-right: 30px;
+}
+
+.slid::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: orangered;
+    left: 0;
+    top: 56px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: all .4s ease-in-out;
+}
+
+.slid:hover:before{
+    transform: scaleX(1);
+}

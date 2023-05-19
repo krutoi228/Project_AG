@@ -1,0 +1,19 @@
+.scene {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.layer {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+}
+.layer-1 {
+    background: url("../images/mountains.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

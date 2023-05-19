@@ -1,0 +1,16 @@
+.parallax {
+}
+
+.sub_parallax {
+    position: fixed;
+    font-size: 3.5rem;
+    z-index: 1;
+    
+}
+
+.main_parallax {
+    position: absolute;
+    display: block;
+    margin-top: 180px;
+    left: 600px;
+}

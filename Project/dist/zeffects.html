@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style_eff.min.css" id="theem">
+    <link rel="icon" href="assets/images/Exclude.svg">
+    
+    <title>Проект AG</title></head>
+<body>
+
+    <div class="page_eff">
+        <div>
+            <header class="header">
+                <div class="scene">
+                    <div class="layer layer-1"></div>
+                </div>
+                <div class="div" id="div">
+                    <a href="#" data-aos="fade-right" class="logo">МК</a>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li><a href="index.html" class="slid">Главная</a></li>
+                            <li><a href="zeffects.html" class="slid">Эфекты</a></li>
+                            <li><a href="#" class="slid">Нестардартное</a></li>
+                        </ul>
+                    </nav>
+                </div>     <div class="main_parallax">
+                    <div class="parallax">
+                        <h2 class="sub_parallax">Параллакс</h2>
+                    </div>
+                </div></header>        </div>
+        <div>
+            <section class="section">
+                <div class="section_effect">
+                    <h2 class="hover">Hover эфекты и анимация</h2>
+                </div>
+                <div class="tild_aim">
+                    <div class="card">
+                        <div class="card-item">
+                            <img src="assets/images/yacht.png" alt="yacht">
+                        </div>
+                    </div>
+                    <p>3D-tilt анимация, направленная на искожение картинки</p>
+                </div>
+                <div class="hover_aim">
+                    <p>3D-tilt анимация, направленная на искожение картинки</p>
+                    <div class="card">
+                        <div class="card-item">
+                            <img src="assets/images/haus.png" alt="yacht">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="aim">
+                    <div class="card">
+                        <div class="card-item">
+                            <img src="assets/images/home.png" alt="yacht">
+                        </div>
+                    </div>
+                    <p>3D-tilt анимация, направленная на искожение картинки</p>        
+                </div>
+            </section>        </div>
+    </div>
+    <script>
+        const cards = document.querySelectorAll('.card')
+
+        for (let i = 0; i < cards.length; i++) {
+            const card = cards[i];
+            card.addEventListener('mousemove', Startrotate);
+            card.addEventListener('mouseout', Stoprotate);
+            
+        }
+        
+        function Startrotate(event) {
+            const cardItem =  this.querySelector('.card-item');
+            const halfheight = cardItem.offsetHeight / 2;
+            const halfwidth = cardItem.offsetWidth / 2;
+            cardItem.style.transform = 'rotateX('+ -(event.offsetY - halfheight) / 10 +'deg) rotateY('+ (event.offsetX - halfwidth ) / 10 +'deg)'
+        }
+        
+        function Stoprotate(event) {
+            const cardItem =  this.querySelector('.card-item');
+            cardItem.style.transform = 'rotate(0)'
+        }
+    </script>
+    <script> 
+    function parallax(event) {
+    this.querySelectorAll('.layer').forEach(layer => {
+            layer.style.transform = `translateX(${event.clientX/50}px)`
+        });
+    }
+    
+    document.addEventListener('mousemove', parallax);
+    </script>
+</body>
+</html>
