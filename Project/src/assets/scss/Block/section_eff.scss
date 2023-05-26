@@ -1,7 +1,7 @@
 .section {
     position: absolute;
     background: #515151;
-    z-index: 2;
+    z-index: 100;
     width: 100%;
     margin-top: 50%;
 }
@@ -16,20 +16,13 @@
 
 .tild_aim {
     display: flex;
-    margin-left: 280px;
-    margin-bottom: 300px;
+    margin-left: 580px;
+    margin-bottom: 400px;
 }
 
 .tild_aim p {
     font-size: 2.4rem;
 }
-
-.aim {
-    display: flex;
-    margin-left: 280px;
-    margin-bottom: 100px;
-}
-
 .card {
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -38,21 +31,14 @@
 .card-item {
     transition: transform .2s;
 }
-.tilt-3D{
-    padding-top: 278px;
-    margin-left: 30px;
-}
 
 .card_hover {
 }
 
 .div_hover {
-    margin-left: 280px;
+    margin-left: 340px;
 }
 
-.div_hover_b{
-    margin-left: 580px;
-}
 
 .text_hover {
     position: absolute;
@@ -62,11 +48,6 @@
 }
 
 .yacht {
-    position: relative;
-    transition: all .5s ease-in-out;
-}
-
-.yacht_b {
     position: relative;
     transition: all .5s ease-in-out;
 }
@@ -101,4 +82,56 @@
 
 .hover_aim:hover .yacht_b{
     transform: scale(1.1);
+}
+
+
+:root {
+    --pr-color: white;
+    --second-color: black;
+    --cubicbz: cubic-bezier(.9, 0, .1, .1);
+    --fz-big: 6rem;
+}
+
+.aim {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-left: 340px;
+    margin-bottom: 100px;
+}
+
+
+.card_eff {
+}
+.card__item {
+    position: relative;
+    cursor: pointer;
+}
+.card__img {
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    width: 448px;
+    height: 303px;
+    object-fit: cover;
+}
+.card__title {
+    position: absolute;
+    left: -70px;
+    bottom: 33px;
+    text-transform: uppercase;
+    font-size: var(--fz-big);
+    color: var(--pr-color);
+    mix-blend-mode: difference;
+    transform: translateX(30px);
+    opacity: 0;
+    will-change: transform, opacity;
+    z-index: 3;
+    transition: 1s var(--cubicbz);
+}
+
+.card__item:hover .card__title{
+    transform: translateX(0);
+    opacity: 1;
 }
