@@ -9,7 +9,7 @@
   --gutter: 40px;
   --size-small: 26;
   --size-big: 36;
-  --depth: 4000px;
+  --depth: 2760px;
   --transition: .75s cubic-bezier(.075, .5, 0, 1);
 }
 
@@ -82,4 +82,22 @@ h1, h1, h3, h4 {
 
 .frame_bg {
   background-color: rgba(0, 0, 0, 0.88);
+}
+
+.text_right > * {
+  position: relative;
+  left: 210px;
+  bottom: 20px;
+}
+
+.text_left > * {
+  position: relative;
+  right: 210px;
+}
+
+.text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: orangered;
 }

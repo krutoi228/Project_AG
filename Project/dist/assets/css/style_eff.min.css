@@ -213,7 +213,6 @@ body {
 
 .card__img {
   position: absolute;
-  display: none;
   bottom: 0px;
   width: 448px;
   height: 303px;
