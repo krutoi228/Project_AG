@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --gutter: 40px;
+  --size-small: 26;
+  --size-big: 36;
+  --depth: 4000px;
+  --transition: .75s cubic-bezier(.075, .5, 0, 1);
+}
+
+body {
+  background: black;
+  color: white;
+  font-size: calc(var(--index) * 0.8);
+  height: var(--depth);
+}
+
+.contair {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  perspective: 1500px;
+}
+
+.gallery {
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition), opacity 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+h1, h1, h3, h4 {
+  font-weight: 100px;
+  font-family: "Raleway", sans-serif;
+  font-size: calc(var(--index) * 3);
+}
+
+.frame h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: calc(var(--index) * 3);
+}
+
+.frame-medium {
+  position: relative;
+  width: 520px;
+  height: 672px;
+  background-position: center;
+  block-size: cover;
+}
+
+.frame-medium2 {
+  position: relative;
+  width: 671px;
+  height: 403px;
+  background-position: center;
+  block-size: cover;
+}
+
+.frame-medium_left {
+  right: calc(var(--size-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frame-medium_right {
+  left: calc(var(--size-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frame_bg {
+  background-color: rgba(0, 0, 0, 0.88);
+}
